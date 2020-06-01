@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   mysql:
-    image: mysql:8.0
+    image: mariadb:latest
     volumes:
       - db_store:/var/lib/mysql
       - ./logs:/var/log/mysql
@@ -46,3 +46,7 @@ services:
 
 volumes:
   db_store:
+    driver_opts:
+      type: none
+      device: $PWD/data/mysql
+      o: bind
