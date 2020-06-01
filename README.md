@@ -2,4 +2,4 @@
 
 - Let's change .env file as you like.
 
-- `docker-comose up -d`
+- then execute `docker-comose up -d`
