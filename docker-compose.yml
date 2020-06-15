@@ -4,7 +4,7 @@ services:
   mysql:
     image: mariadb:latest
     volumes:
-      - db_store:/var/lib/mysql
+      - ./data/mysql:/var/lib/mysql
       - ./logs:/var/log/mysql
       - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     restart: always
@@ -43,10 +43,3 @@ services:
       - "80:80"
     depends_on:
       - mysql
-
-volumes:
-  db_store:
-    driver_opts:
-      type: none
-      device: $PWD/data/mysql
-      o: bind
