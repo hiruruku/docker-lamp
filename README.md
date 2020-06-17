@@ -1,4 +1,4 @@
-# docker-lamp(php:7.4-apache-mysql8.0-phpmyadmin)
+# docker-lamp(php:7.4-apache_MariaDB:latest-phpmyadmin)
 
 - Let's change .env file as you like.
 
