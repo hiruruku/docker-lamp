@@ -10,6 +10,10 @@ RUN apt-get update \
   && docker-php-ext-install pdo_mysql mysqli gd bcmath gettext \
   && a2enmod rewrite
 
+# For cakephp
+# && apt-get install -y libicu-dev
+# && docker-php-ext-install intl
+
 # composer
 # && php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 # && php composer-setup.php \
