@@ -1,5 +1,6 @@
 # docker-lamp(PHP:7.4-Apache/MariaDB:latest/phpMyAdmin)
 
+- You can use this stack instead of Xampp in many cases for laravel, cakephp, so on. 
 - Let's change .env file as you like.
 - then execute `docker-comose up -d`
 
